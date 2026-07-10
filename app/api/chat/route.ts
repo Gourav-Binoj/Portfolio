@@ -54,18 +54,13 @@ export async function POST(req: Request) {
       }
     );
   } catch (error) {
-    console.error('[v0] Chat error:', error);
+  console.error("API CHAT ERROR:", error);
 
-    // Fallback error response
-    return new Response(
-      JSON.stringify({
-        error: 'Failed to generate response',
-        message: error instanceof Error ? error.message : 'Unknown error',
-      }),
-      {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      }
-    );
-  }
+  return Response.json(
+    {
+      error: error instanceof Error ? error.message : "Unknown error"
+    },
+    { status: 500 }
+  );
+}
 }

@@ -49,7 +49,10 @@ export default function ChatbotWidget() {
         }),
       });
 
-      if (!response.ok) throw new Error('Failed to get response');
+      if (!response.ok) {
+  const error = await response.json();
+  throw new Error(error.error || 'Failed to get response');
+}
 
       const data = await response.json();
       setMessages((prev) => [

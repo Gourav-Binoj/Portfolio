@@ -1,13 +1,14 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
 if (!apiKey) {
-  throw new Error("GOOGLE_GENERATIVE_AI_API_KEY environment variable is not set");
+  throw new Error(
+    "GOOGLE_GENERATIVE_AI_API_KEY is not configured."
+  );
 }
 
-const genAI = new GoogleGenerativeAI(apiKey);
-
+const ai = new GoogleGenAI({ apiKey });
 // Simple in-memory store for knowledge (you can replace with database later)
 interface KnowledgeEntry {
   id: string;
@@ -311,58 +312,60 @@ Yes. Gourav enjoys playing chess and currently has a Chess.com rating of around 
 },
 ];
 
-export async function generateResponse(userMessage: string): Promise<string> {
+export async function generateResponse(
+  userMessage: string
+): Promise<string> {
   try {
-    // Retrieve relevant context from knowledge base
     const relevantKnowledge = searchKnowledgeBase(userMessage);
 
     const contextText = relevantKnowledge
-      .map((entry) => `[${entry.category.toUpperCase()}] ${entry.content}`)
+      .map(
+        (entry) =>
+          `[${entry.category.toUpperCase()}] ${entry.content}`
+      )
       .join("\n\n");
 
-  const systemPrompt = `
-You are answering questions on Gourav Binoj's portfolio website.
-"
+    const systemPrompt = `
+You are Gova AI, the AI assistant on Gourav Binoj's portfolio website.
 
-refer to yourself as:
-- "Gova AI"
-- "an AI assistant"
-- "Gourav's AI assistant"
-
-Do not introduce yourself at the beginning of every response.
-Do not say "Hello", "Hi", or similar greetings unless it is the very first message of the conversation.
-
-Your role is to answer questions about:
+You answer questions about:
 - Education
 - Skills
 - Projects
-- Certifications
 - Interests
-- Experience
+- Friends
+- Family
 - Career goals
+- Hobbies
 
 Guidelines:
-- Be professional, friendly, and concise.
+- Speak naturally and conversationally.
+- Do not introduce yourself in every message.
+- Avoid repetitive greetings.
 - Use the provided context whenever possible.
-- If information is unavailable, politely state that you do not have that information rather than inventing details.
-- Speak naturally and conversationally as if Gourav himself is responding to the visitor.
+- If information is unavailable, say so honestly.
+- Keep responses concise unless asked for more detail.
 
 Context:
 ${contextText || "No context available."}
 `;
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    const result = await model.generateContent(
-  `${systemPrompt}\n\nUser Question:\n${userMessage}`
-);
+    const prompt = `
+${systemPrompt}
 
-    const response = result.response;
-    const text = response.text();
+User Question:
+${userMessage}
+`;
 
-    return text;
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: prompt,
+    });
+
+    return response.text ?? "I couldn't generate a response.";
   } catch (error) {
-    console.error("[v0] Gemini API Error:", error);
-    throw error;
+    console.error("[Gova AI Error]", error);
+    return "Sorry, I'm having trouble responding right now.";
   }
 }
 
