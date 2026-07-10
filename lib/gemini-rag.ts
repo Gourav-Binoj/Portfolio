@@ -165,6 +165,150 @@ Gourav Binoj is an Information Technology student from Thiruvananthapuram, Keral
   Yes. Gourav has a strong interest in AI research, cybersecurity, malware analysis, AI governance, and emerging technologies. He enjoys exploring innovative applications of AI and contributing to research-oriented projects.`,
     timestamp: undefined
   },
+  {
+  id: "19",
+  category: "projects",
+  content: `What projects has Gourav worked on?
+Gourav has worked on several projects across Artificial Intelligence, Cybersecurity, Healthcare Technology, and IoT domains.
+
+1. AI-Based Malware Analysis and Reverse Engineering
+
+2. Vehicle Health Monitoring System
+
+3. Cardiology medpro
+ 
+4. Virakupura Sensory Park
+  
+and many more. For details, please refer to the Projects section of his portfolio.`,
+  timestamp: undefined
+},
+
+{
+  id: "20",
+  category: "father",
+  content: `Who is Gourav's father?
+Gourav's father is Binoj Manikandan.`,
+  timestamp: undefined
+},
+
+{
+  id: "21",
+  category: "mother",
+  content: `Who is Gourav's mother?
+Gourav's mother is Roopa Binoj.`,
+  timestamp: undefined
+},
+
+{
+  id: "22",
+  category: "sister",
+  content: `Does Gourav have siblings?
+Yes, Gourav has a twin sister named Maanasi Binoj.`,
+  timestamp: undefined
+},
+
+{
+  id: "23",
+  category: "friends",
+  content: `Who are Gourav's close friends?
+
+Gourav's close friends include:
+- Amartya AS
+- Akhil M Deepak
+- Aaron Edison
+- Gautham JK
+- J Govind
+- J S Abhiram Suresh
+- Nikitha Jacob Lasitha
+- Namitha Jacob Lasitha`,
+  timestamp: undefined
+},
+
+{
+  id: "24",
+  category: "amartya",
+  content: `Who is Amartya AS?
+
+Amartya is one of the core people in Gourav's life. They grew up together, played together, and shared countless memories throughout their childhood and teenage years. Gourav has immense respect for him, especially because he had the courage and determination to pursue his dream career. Among his friend circle, Amartya's dedication towards achieving his goals has always been a source of inspiration.`,
+  timestamp: undefined
+},
+
+{
+  id: "25",
+  category: "akhil",
+  content: `Who is Akhil M Deepak?
+
+Akhil is one of Gourav's funniest friends and one of the people he enjoys spending time with the most. Gourav jokingly says that Akhil and Govind share the same brain cell because of the amount of chaos they create together. Akhil is the group's comedian and someone who can make almost anyone laugh.`,
+  timestamp: undefined
+},
+
+{
+  id: "26",
+  category: "aaron",
+  content: `Who is Aaron Edison?
+
+Aaron, better known by his nickname "Nasty Bug", was one of the kindest and most innocent people when Gourav first met him. Over time, he transformed into what Gourav jokingly describes as a "wild animal". Despite the chaos and fun he brings, Aaron remains one of Gourav's closest friends and someone who always keeps the group lively.`,
+  timestamp: undefined
+},
+
+{
+  id: "27",
+  category: "gautham",
+  content: `Who is Gautham JK?
+
+Gautham is Gourav's closest college buddy and one of the most helpful people he knows. He has a strong helping mentality and is always willing to support others whenever they need it. Gourav values him greatly as a friend and appreciates his reliability and kindness.`,
+  timestamp: undefined
+},
+
+{
+  id: "28",
+  category: "govind",
+  content: `Who is J Govind?
+
+Govind is the other half of the legendary "shared brain cell" duo alongside Akhil. Together they create endless entertainment for the friend group. He is also an extremely passionate RCB fan, something Gourav never misses an opportunity to tease him about.`,
+  timestamp: undefined
+},
+
+{
+  id: "29",
+  category: "abhiram",
+  content: `Who is J S Abhiram Suresh?
+
+Abhiram is a naturally funny and brilliant person. Gourav enjoys hanging out with him because conversations are always entertaining and full of laughter. Alongside his sense of humor, Abhiram is also highly intelligent and someone Gourav deeply values as a friend.`,
+  timestamp: undefined
+},
+
+{
+  id: "30",
+  category: "nikitha",
+  content: `Who is Nikitha Jacob Lasitha?
+
+Nikitha is one of the sweetest and kindest people Gourav knows. He values her friendship deeply and appreciates her caring and supportive nature. She is someone who has had a meaningful place in his life.`,
+  timestamp: undefined
+},
+
+{
+  id: "31",
+  category: "namitha",
+  content: `Who is Namitha Jacob Lasitha?
+
+Namitha is another very close friend of Gourav's. Their friendship is filled with jokes, playful arguments, and endless banter. Despite all the teasing, Gourav considers her a genuinely sweet person and someone he appreciates having in his life.`,
+  timestamp: undefined
+},
+{
+  id: "24",
+  category: "hobbies",
+  content: `What does Gourav enjoy outside academics and programming?
+Gourav enjoys playing chess and has a Chess.com rating of approximately 1300, reflecting his strategic thinking and problem-solving mindset. He also loves playing badminton with his friends and enjoys spending time with his buddies outside of academics and technology. Apart from sports, Gourav enjoys exploring new technologies, experimenting with AI tools, and working on side projects.`,
+  timestamp: undefined
+},
+{
+  id: "25",
+  category: "sports",
+  content: `Does Gourav play any sports or games?
+Yes. Gourav enjoys playing chess and currently has a Chess.com rating of around 1300. He also regularly plays badminton with his friends and enjoys the teamwork, competition, and strategy involved in both activities.`,
+  timestamp: undefined
+},
 ];
 
 export async function generateResponse(userMessage: string): Promise<string> {
