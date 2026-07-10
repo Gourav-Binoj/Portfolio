@@ -296,14 +296,14 @@ Namitha is another very close friend of Gourav's. Their friendship is filled wit
   timestamp: undefined
 },
 {
-  id: "24",
+  id: "32",
   category: "hobbies",
   content: `What does Gourav enjoy outside academics and programming?
 Gourav enjoys playing chess and has a Chess.com rating of approximately 1300, reflecting his strategic thinking and problem-solving mindset. He also loves playing badminton with his friends and enjoys spending time with his buddies outside of academics and technology. Apart from sports, Gourav enjoys exploring new technologies, experimenting with AI tools, and working on side projects.`,
   timestamp: undefined
 },
 {
-  id: "25",
+  id: "33",
   category: "sports",
   content: `Does Gourav play any sports or games?
 Yes. Gourav enjoys playing chess and currently has a Chess.com rating of around 1300. He also regularly plays badminton with his friends and enjoys the teamwork, competition, and strategy involved in both activities.`,
