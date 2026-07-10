@@ -14,7 +14,7 @@ export default function ChatbotWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Hi! 👋 I&apos;m an AI assistant here to answer questions about my portfolio, experience, and projects. Feel free to ask me anything!',
+      content: 'Hi! 👋 I\'m an AI assistant here to answer questions about my portfolio, experience, and projects. Feel free to ask me anything!',
     },
   ]);
   const [input, setInput] = useState('');
