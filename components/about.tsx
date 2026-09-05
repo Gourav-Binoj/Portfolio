@@ -40,8 +40,8 @@ export default function About() {
 ];
 const handleDownloadResume = () => {
   const link = document.createElement('a');
-  link.href = '/Resume_pits.pdf';
-  link.download = 'Resume_pits.pdf';
+  link.href = '/updated_resume.pdf'; // Replace with the actual path to your resume file
+  link.download = 'Resume.pdf';
   link.click();
 };
 

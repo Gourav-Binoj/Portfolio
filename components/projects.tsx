@@ -4,6 +4,27 @@ import { ExternalLink, Code2 } from 'lucide-react';
 
 export default function Projects() {
    const projects = [
+    {
+  title: 'MinuteOfTheMeeting AI',
+
+  description:
+    'Built an AI-powered application that processes meeting audio, video, and text to generate structured Minutes of Meeting (MoM). Developed using Next.js, FastAPI, Hugging Face AI models, and Docker.',
+
+  technologies: [
+    'Next.js',
+    'FastAPI',
+    'Python',
+    'Hugging Face',
+    'AI/LLMs',
+    'Docker',
+  ],
+
+  year: '2026',
+
+  link: 'https://minute-of-the-meeting-ai.vercel.app/',
+
+  github: 'https://github.com/Gourav-Binoj/-MinuteOfTheMeeting-AI',
+  },
   {
     title: 'AI-Based Malware Analysis and Reverse Engineering',
     description:
