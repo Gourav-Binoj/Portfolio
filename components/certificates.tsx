@@ -8,7 +8,7 @@ export default function Certificates() {
     name: 'LLM Engineering: Master AI and Large Language Models',
     issuer: 'Udemy',
     date: '2026',
-    credentialId: 'IN-PROGRESS',
+    credentialId: ' UC-9b1a4ac0-8940-4925-8d23-3362da931398',
   },
   {
   name: 'The Complete 2024 Web Development Bootcamp',
