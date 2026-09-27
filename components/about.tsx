@@ -41,7 +41,7 @@ export default function About() {
 const handleDownloadResume = () => {
   const link = document.createElement('a');
 
-  link.href = '/updated_resume_5-9-26.pdf';
+  link.href = '/Portfolio_clean\\public\\resume_27-sept-2026.pdf';
   link.download = 'Resume.pdf';
 
   link.click();
