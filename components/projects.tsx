@@ -5,6 +5,26 @@ import { ExternalLink, Code2 } from 'lucide-react';
 export default function Projects() {
    const projects = [
     {
+  title: 'GreatCode',
+  description:
+    'Developed a LeetCode-style coding platform that allows users to upload programming problem PDFs and automatically extract problem statements, constraints, and test cases using Gemini AI. Implemented Google OAuth authentication with Supabase, secure file storage, editable problem management, and an in-browser Python code execution environment using Pyodide. Deployed the frontend on Vercel and backend on Render.',
+  technologies: [
+    'React',
+    'Python',
+    'FastAPI',
+    'Supabase',
+    'Gemini AI',
+    'Pyodide',
+    'JavaScript',
+    'REST APIs',
+    'Vercel',
+    'Render',
+  ],
+  year: '2026',
+  link: 'https://great-code-chi.vercel.app/',
+  github: 'https://github.com/Gourav-Binoj/GreatCode',
+},
+    {
   title: 'MinuteOfTheMeeting AI',
 
   description:
